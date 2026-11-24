@@ -51,103 +51,121 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 0;
-    padding: 40px 20px 56px;
+    padding: 48px 24px;
   }
-  .panel { width: 100%; max-width: 270px; }
+  .panel { width: 100%; max-width: 440px; }
   .stage { min-height: 100vh; align-items: center; }
-  .panel-name { color: var(--label); font-size: 12px; margin: 0 0 14px; }
+  .panel-name { color: var(--label); font-size: 14px; margin: 0 0 16px; }
   .card {
     background: var(--card);
-    border-radius: 12px;
-    padding: 24px 25px 26px;
+    border-radius: 14px;
+    padding: 38px 40px 40px;
     width: 100%;
   }
   .eyebrow {
-    display: flex; align-items: center; gap: 6px;
-    font-size: 9px; font-weight: 600; letter-spacing: .04em;
-    color: var(--green); text-transform: uppercase; margin-bottom: 12px;
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; font-weight: 600; letter-spacing: .04em;
+    color: var(--green); text-transform: uppercase; margin-bottom: 16px;
   }
-  .eyebrow::before { content: ""; width: 14px; height: 2px; background: var(--green); }
-  h1 { font-size: 18px; line-height: 1.25; font-weight: 600; margin: 0 0 8px; letter-spacing: -.01em; }
-  .sub { font-size: 9.5px; color: var(--muted); margin: 0 0 20px; }
-  .field { margin-bottom: 14px; }
-  label.lbl { display: block; font-size: 9px; font-weight: 500; margin-bottom: 6px; }
+  .eyebrow::before { content: ""; width: 18px; height: 2px; background: var(--green); }
+  h1 { font-size: 30px; line-height: 1.25; font-weight: 600; margin: 0 0 10px; letter-spacing: -.02em; }
+  .sub { font-size: 14px; line-height: 1.5; color: var(--muted); margin: 0 0 28px; }
+  .field { margin-bottom: 18px; }
+  label.lbl { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
   .input-wrap { position: relative; }
   input[type="text"], input[type="email"], input[type="password"] {
-    width: 100%; height: 28px;
-    background: var(--field); border: 1px solid var(--border); border-radius: 6px;
-    padding: 0 10px; font: inherit; font-size: 9px; color: var(--ink);
+    width: 100%; height: 48px;
+    background: var(--field); border: 1px solid var(--border); border-radius: 8px;
+    padding: 0 14px; font: inherit; font-size: 15px; color: var(--ink);
   }
   input::placeholder { color: var(--muted); opacity: .85; }
-  input:focus-visible { outline: 2px solid var(--green); outline-offset: 1px; border-color: transparent; }
-  .input-wrap input { padding-right: 40px; }
+  input:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-color: transparent; }
+  .input-wrap input { padding-right: 64px; }
   .toggle {
-    position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
-    background: none; border: 0; padding: 2px 3px; cursor: pointer;
-    font: inherit; font-size: 8px; font-weight: 500; color: var(--ink);
+    position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+    background: none; border: 0; padding: 4px; cursor: pointer;
+    font: inherit; font-size: 12px; font-weight: 600; color: var(--ink);
   }
   .toggle:focus-visible, a:focus-visible, .btn:focus-visible, .check input:focus-visible {
     outline: 2px solid var(--green); outline-offset: 2px; border-radius: 3px;
   }
-  .row { display: flex; align-items: center; justify-content: space-between; margin: 2px 0 14px; }
-  .check { display: flex; align-items: center; gap: 6px; font-size: 8px; color: var(--muted); cursor: pointer; }
-  .check input { width: 10px; height: 10px; margin: 0; accent-color: var(--green); }
+  .row { display: flex; align-items: center; justify-content: space-between; margin: 4px 0 20px; }
+  .check { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); cursor: pointer; }
+  .check input { width: 15px; height: 15px; margin: 0; accent-color: var(--green); }
   a { color: var(--green); font-weight: 600; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .row a { font-size: 8px; }
-  .hint { font-size: 7.5px; color: var(--muted); margin: -6px 0 14px; }
+  .row a { font-size: 12px; }
+  .hint { font-size: 12px; line-height: 1.4; color: var(--muted); margin: -8px 0 18px; }
   .btn {
-    width: 100%; height: 28px; border: 0; border-radius: 6px;
-    background: var(--green); color: #fff; font: inherit; font-size: 9px; font-weight: 500; cursor: pointer;
+    width: 100%; height: 48px; border: 0; border-radius: 8px;
+    background: var(--green); color: #fff; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer;
     transition: background .15s;
   }
   .btn:hover { background: var(--green-hover); }
   .switch {
-    margin: 16px 0 0; padding-top: 14px; border-top: 1px solid var(--border);
-    text-align: center; font-size: 8px; color: var(--muted);
+    margin: 22px 0 0; padding-top: 18px; border-top: 1px solid var(--border);
+    text-align: center; font-size: 12px; color: var(--muted);
   }
-  .switch a { margin-left: 2px; }
-  .error { color: #b3261e; font-size: 8px; margin-top: 4px; display: none; }
+  .switch a { margin-left: 4px; }
+  .error { color: #b3261e; font-size: 12px; margin-top: 6px; display: none; }
   .field.invalid .error { display: block; }
   .field.invalid input { border-color: #b3261e; }
-  .status { font-size: 8.5px; color: var(--green); text-align: center; margin: 10px 0 0; min-height: 12px; }
+  .status { font-size: 13px; color: var(--green); text-align: center; margin: 14px 0 0; min-height: 18px; }
+  .status.register-error { color: #b3261e; }
   @media (max-width: 640px) {
-    .panel { max-width: 340px; }
+    .stage { padding: 24px 16px; }
+    .panel { max-width: 440px; }
+    .card { padding: 28px 24px 30px; }
+    h1 { font-size: 26px; }
   }
 </style>
 </head>
 <body>
 <main class="stage">
 <section class="panel" aria-labelledby="register-title">
-    <form class="card" id="register-form" novalidate>
+    <form class="card" id="register-form" method="post" action="{% url 'register' %}">
+      {% csrf_token %}
       <div class="eyebrow">Get started</div>
       <h1 id="register-title">Create your account</h1>
       <p class="sub">A fresh start, just a few details away.</p>
 
-      <div class="field">
-        <label class="lbl" for="reg-name">Full name</label>
-        <input type="text" id="reg-name" name="name" placeholder="Enter your full name" autocomplete="name" required>
-        <div class="error">Enter your full name.</div>
+      {% if messages %}
+        {% for message in messages %}
+          <p class="status{% if message.tags == 'error' %} register-error{% endif %}" role="status">{{ message }}</p>
+        {% endfor %}
+      {% endif %}
+
+      <div class="field{% if form.username.errors %} invalid{% endif %}">
+        <label class="lbl" for="id_username">Username</label>
+        <input type="text" id="id_username" name="username" value="{{ form.username.value|default:'' }}" placeholder="Choose a username" autocomplete="username" required>
+        {% for error in form.username.errors %}<div class="error">{{ error }}</div>{% endfor %}
       </div>
 
-      <div class="field">
-        <label class="lbl" for="reg-email">Email address</label>
-        <input type="email" id="reg-email" name="email" placeholder="you@example.com" autocomplete="email" required>
-        <div class="error">Enter a valid email address.</div>
+      <div class="field{% if form.email.errors %} invalid{% endif %}">
+        <label class="lbl" for="id_email">Email address</label>
+        <input type="email" id="id_email" name="email" value="{{ form.email.value|default:'' }}" placeholder="you@example.com" autocomplete="email" required>
+        {% for error in form.email.errors %}<div class="error">{{ error }}</div>{% endfor %}
       </div>
 
-      <div class="field">
-        <label class="lbl" for="reg-password">Password</label>
+      <div class="field{% if form.password1.errors %} invalid{% endif %}">
+        <label class="lbl" for="id_password1">Password</label>
         <div class="input-wrap">
-          <input type="password" id="reg-password" name="password" placeholder="Create a password" autocomplete="new-password" required>
-          <button type="button" class="toggle" data-target="reg-password" aria-label="Show password">Show</button>
+          <input type="password" id="id_password1" name="password1" placeholder="Create a password" autocomplete="new-password" required>
+          <button type="button" class="toggle" data-target="id_password1" aria-label="Show password">Show</button>
         </div>
-        <div class="error">Use at least 8 characters, including a number.</div>
+        {% for error in form.password1.errors %}<div class="error">{{ error }}</div>{% endfor %}
       </div>
-      <p class="hint">Use at least 8 characters, including a number.</p>
+
+      <div class="field{% if form.password2.errors %} invalid{% endif %}">
+        <label class="lbl" for="id_password2">Confirm password</label>
+        <div class="input-wrap">
+          <input type="password" id="id_password2" name="password2" placeholder="Repeat your password" autocomplete="new-password" required>
+          <button type="button" class="toggle" data-target="id_password2" aria-label="Show password">Show</button>
+        </div>
+        {% for error in form.password2.errors %}<div class="error">{{ error }}</div>{% endfor %}
+      </div>
 
       <button type="submit" class="btn">Create account</button>
-      <p class="status" id="register-status" role="status"></p>
 
       <p class="switch">Already have an account? <a href="{% url 'login' %}">Log in</a></p>
     </form>
@@ -167,22 +185,21 @@
   });
 
   function setInvalid(input, bad) {
-    input.closest('.field').classList.toggle('invalid', bad);
+    if (input && input.closest('.field')) {
+      input.closest('.field').classList.toggle('invalid', bad);
+    }
   }
-  var emailOk = function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); };
 
-  // Register
-  document.getElementById('register-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    var name = this.elements.name, email = this.elements.email, pass = this.elements.password;
-    var nameOk = name.value.trim().length > 1;
-    var passOk = pass.value.length >= 8 && /\d/.test(pass.value);
-    setInvalid(name, !nameOk);
-    setInvalid(email, !emailOk(email.value));
-    setInvalid(pass, !passOk);
-    var ok = nameOk && emailOk(email.value) && passOk;
-    document.getElementById('register-status').textContent = ok ? 'Creating your account…' : '';
-    // TODO: send { name, email, password } to your backend here
+  document.getElementById('register-form').addEventListener('submit', function () {
+    var username = this.elements.username;
+    var email = this.elements.email;
+    var password1 = this.elements.password1;
+    var password2 = this.elements.password2;
+
+    setInvalid(username, !username.value.trim());
+    setInvalid(email, !email.validity.valid);
+    setInvalid(password1, password1.value.length < 8);
+    setInvalid(password2, password1.value !== password2.value);
   });
 </script>
 </body>
