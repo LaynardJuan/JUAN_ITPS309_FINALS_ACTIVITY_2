@@ -27,7 +27,7 @@ def login_user(request):
         if form.is_valid():
             user = form.get_user()
             login(request, user)
-            return redirect('dashboard')
+            return redirect('students:student_list')
         messages.error(request, 'Invalid username or password.')
     else:
         form = AuthenticationForm(request)

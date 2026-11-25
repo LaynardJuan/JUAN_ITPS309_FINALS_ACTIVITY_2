@@ -7,4 +7,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/admin/", RedirectView.as_view(url="/admin/", permanent=False)),
     path("accounts/", include("accounts.urls")),
+    path("students/", include("students.urls")),
 ]
